@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tab_text">
+        <item>微信</item>
+        <item>通讯录</item>
+        <item>发现</item>
+        <item>我</item>
+    </string-array>
+    <array name="tab_icon">
+        <item>@drawable/wx_selector</item>
+        <item>@drawable/contacts_selector</item>
+        <item>@drawable/find_selector</item>
+        <item>@drawable/me_selector</item>
+    </array>
+    <array name="tab_id">
+        <item>@id/wx</item>
+        <item>@id/contacts</item>
+        <item>@id/find</item>
+        <item>@id/me</item>
+    </array>
+</resources>

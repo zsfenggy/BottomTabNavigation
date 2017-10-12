@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BottomTabBar">
+        <attr name="btbCheckedButton" format="integer" />
+        <attr name="btbOrientation">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+        <attr name="btbTextArray" format="reference" />
+        <attr name="btbIconArray" format="reference" />
+        <attr name="btbIdArray" format="reference" />
+        <attr name="btbTextSize" format="integer" />
+        <attr name="btbTextColor" format="color" />
+        <attr name="btbShowLine" format="boolean" />
+        <attr name="btbLineColor" format="color" />
+        <attr name="btbLineThickness" format="integer" />
+    </declare-styleable>
+</resources>

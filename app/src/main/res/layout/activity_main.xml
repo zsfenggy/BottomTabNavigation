@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="me.stefan.btn.MainActivity">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="@id/root"
+        app:layout_constraintRight_toRightOf="@id/root"
+        app:layout_constraintTop_toTopOf="@+id/bottomTabBar" />
+
+    <me.stefan.bottom_tab_navigation.BottomTabBar
+        android:id="@+id/bottomTabBar"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="#f3f3f3"
+        app:layout_constraintBottom_toBottomOf="@id/root"
+        app:layout_constraintLeft_toLeftOf="@id/root"
+        app:layout_constraintLeft_toRightOf="@id/root"
+        app:btbCheckedButton="@id/wx"
+        app:btbIconArray="@array/tab_icon"
+        app:btbIdArray="@array/tab_id"
+        app:btbLineColor="#c0c0c0"
+        app:btbLineThickness="1"
+        app:btbShowLine="true"
+        app:btbTextArray="@array/tab_text"
+        app:btbTextColor="@color/tab_text_selector"
+        app:btbTextSize="12" />
+</android.support.constraint.ConstraintLayout>

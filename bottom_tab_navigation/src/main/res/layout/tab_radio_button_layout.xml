@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/tab_height"
+    android:background="@null">
+
+    <me.stefan.bottom_tab_navigation.CheckableImageView
+        android:id="@+id/tab_item_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp" />
+
+    <ImageView
+        android:id="@+id/unchecked_msg_icon"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="6dp"
+        android:layout_toEndOf="@+id/tab_item_image"
+        android:layout_toRightOf="@id/tab_item_image"
+        android:contentDescription="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/msg_point_bg"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/unchecked_msg_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="4.0dp"
+        android:layout_toEndOf="@+id/tab_item_image"
+        android:layout_toRightOf="@id/tab_item_image"
+        android:background="@drawable/msg_num_bg"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:padding="2.5dp"
+        android:text=""
+        android:textColor="@color/color_f"
+        android:textSize="@dimen/msg_text_size"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/unchecked_msg_new"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="4.0dp"
+        android:layout_toEndOf="@+id/tab_item_image"
+        android:layout_toRightOf="@id/tab_item_image"
+        android:background="@drawable/msg_new_bg"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:paddingBottom="2dp"
+        android:paddingLeft="2.5dp"
+        android:paddingRight="2.5dp"
+        android:paddingTop="1dp"
+        android:text="@string/new_mark_txt"
+        android:textColor="@color/color_f"
+        android:textSize="@dimen/new_text_size"
+        android:visibility="gone" />
+
+    <me.stefan.bottom_tab_navigation.CheckableTextView
+        android:id="@+id/tab_item_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tab_item_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text=""
+        android:textSize="@dimen/tab_text_size" />
+
+</RelativeLayout>
