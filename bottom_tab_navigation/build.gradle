@@ -27,7 +27,7 @@ publish {
     userOrg = 'scitech'
     groupId = 'me.stefan'
     artifactId = 'bottom-tab-bar'
-    publishVersion = '0.0.3'
+    publishVersion = '0.0.4'
 }
 
 dependencies {

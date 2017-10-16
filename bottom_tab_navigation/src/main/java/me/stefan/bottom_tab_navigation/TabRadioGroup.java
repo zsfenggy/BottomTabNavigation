@@ -69,7 +69,7 @@ public class TabRadioGroup extends LinearLayout {
             trb.setId(trbId);
             trb.setTextSize(textSize);
             trb.init(textArray[i], colorStateList, iconResId, i == mCheckedId);
-            LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(
+            LayoutParams lp = new LayoutParams(
                     LinearLayout.LayoutParams.MATCH_PARENT,
                     LinearLayout.LayoutParams.MATCH_PARENT);
             lp.weight = 1;
